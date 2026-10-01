@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI2_QueryDataStoreHint" resname="HDI2_QueryDataStoreHint">
+				<source>In this part you will learn how to query the DataStore</source>
+				<target>In this part you will learn how to query the DataStore</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelVSSStatus" resname="HDI2_LabelVSSStatus">
+				<source>VSS status:</source>
+				<target>VSS status:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelExecutedOn" resname="HDI2_LabelExecutedOn">
+				<source>The Get application Info command is now executed on:</source>
+				<target>The Get application Info command is now executed on:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLaunchedAsService" resname="HDI2_LabelLaunchedAsService">
+				<source>Database launched as service:</source>
+				<target>Database launched as service:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelPortPlaceholder" resname="HDI2_LabelPortPlaceholder">
+				<source>title to be updated</source>
+				<target>title to be updated</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelTLSEnabled" resname="HDI2_LabelTLSEnabled">
+				<source>TLS enabled:</source>
+				<target>TLS enabled:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelNewConnections" resname="HDI2_LabelNewConnections">
+				<source>New connections allowed:</source>
+				<target>New connections allowed:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelCPUPercent" resname="HDI2_LabelCPUPercent">
+				<source>% processor used:</source>
+				<target>% processor used:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelUptime" resname="HDI2_LabelUptime">
+				<source>Up time (seconds):</source>
+				<target>Up time (seconds):</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelNetOutput" resname="HDI2_LabelNetOutput">
+				<source>Network output throughput (KB/s):</source>
+				<target>Network output throughput (KB/s):</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLegacyNetwork" resname="HDI2_LabelLegacyNetwork">
+				<source>Use legacy network layer:</source>
+				<target>Use legacy network layer:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelNetInput" resname="HDI2_LabelNetInput">
+				<source>Network input throughput (KB/s):</source>
+				<target>Network input throughput (KB/s):</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SectionGeneral" resname="HDI2_SectionGeneral">
+				<source>General information</source>
+				<target>General information</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SectionNetwork" resname="HDI2_SectionNetwork">
+				<source>Network information</source>
+				<target>Network information</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SectionServer" resname="HDI2_SectionServer">
+				<source>Server information</source>
+				<target>Server information</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelIPsListened" resname="HDI2_LabelIPsListened">
+				<source>IPs listened by 4D Server:</source>
+				<target>IPs listened by 4D Server:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelClientIPs" resname="HDI2_LabelClientIPs">
+				<source>Client IPs allowed / denied on Server:</source>
+				<target>Client IPs allowed / denied on Server:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnConsumeCPU" resname="HDI2_BtnConsumeCPU">
+				<source>Consume CPU</source>
+				<target>Consume CPU</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderAllowDeny" resname="HDI2_HeaderAllowDeny">
+				<source>Allow / deny</source>
+				<target>Allow / deny</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderIP" resname="HDI2_HeaderIP">
+				<source>IP</source>
+				<target>IP</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
