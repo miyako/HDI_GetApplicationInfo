@@ -1,4 +1,4 @@
-C_OBJECT:C1216($appType)
+var $appType : Object
 
 initTexts
 
@@ -10,17 +10,17 @@ Case of
 		
 		$appType:=New object:C1471
 		$appType.value:=4D Local mode:K5:1
-		$appType.label:="4D local"
+		$appType.label:=Localized string("ExecModeLocal")
 		Form:C1466.applicationTypes.push($appType)
 		
 		$appType:=New object:C1471
 		$appType.value:=4D Remote mode:K5:5
-		$appType.label:="4D remote"
+		$appType.label:=Localized string("ExecModeRemote")
 		Form:C1466.applicationTypes.push($appType)
 		
 		$appType:=New object:C1471
 		$appType.value:=4D Server:K5:6
-		$appType.label:="4D server"
+		$appType.label:=Localized string("ExecModeServer")
 		Form:C1466.applicationTypes.push($appType)
 		
 		refreshData

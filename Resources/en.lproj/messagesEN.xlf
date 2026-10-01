@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messages" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI_Title" resname="HDI_Title">
+				<source>get started with the new Get application info command?</source>
+				<target>get started with the new Get application info command?</target>
+			</trans-unit>
+			<trans-unit id="HDI_Info" resname="HDI_Info">
+				<source>Get application info</source>
+				<target>Get application info</target>
+			</trans-unit>
+			<trans-unit id="BtnClose" resname="BtnClose">
+				<source>Close</source>
+				<target>Close</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</source>
+				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
+				<source>You must have a valid 4D View Pro license to continue.</source>
+				<target>You must have a valid 4D View Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</source>
+				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
+				<source>You must have a valid 4D Write Pro license to continue.</source>
+				<target>You must have a valid 4D Write Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="ExecModeLocal" resname="ExecModeLocal">
+				<source>4D local</source>
+				<target>4D local</target>
+			</trans-unit>
+			<trans-unit id="ExecModeRemote" resname="ExecModeRemote">
+				<source>4D remote</source>
+				<target>4D remote</target>
+			</trans-unit>
+			<trans-unit id="ExecModeServer" resname="ExecModeServer">
+				<source>4D server</source>
+				<target>4D server</target>
+			</trans-unit>
+			<trans-unit id="VSSNotAvailable" resname="VSSNotAvailable">
+				<source>Not available</source>
+				<target>Not available</target>
+			</trans-unit>
+			<trans-unit id="VSSError" resname="VSSError">
+				<source>Not running (a problem occurred)</source>
+				<target>Not running (a problem occurred)</target>
+			</trans-unit>
+			<trans-unit id="VSSUpdateRequired" resname="VSSUpdateRequired">
+				<source>Not running (VSS service is not up to date)</source>
+				<target>Not running (VSS service is not up to date)</target>
+			</trans-unit>
+			<trans-unit id="VSSRunning" resname="VSSRunning">
+				<source>Up and running</source>
+				<target>Up and running</target>
+			</trans-unit>
+			<trans-unit id="NotReturnedMono" resname="NotReturnedMono">
+				<source>Not returned with 4D mono</source>
+				<target>Not returned with 4D mono</target>
+			</trans-unit>
+			<trans-unit id="NotReturnedMonoRemote" resname="NotReturnedMonoRemote">
+				<source>Not returned with 4D mono / 4D remote</source>
+				<target>Not returned with 4D mono / 4D remote</target>
+			</trans-unit>
+			<trans-unit id="PortDefault" resname="PortDefault">
+				<source>Port:</source>
+				<target>Port:</target>
+			</trans-unit>
+			<trans-unit id="PortRemote" resname="PortRemote">
+				<source>Port used to connect on server:</source>
+				<target>Port used to connect on server:</target>
+			</trans-unit>
+			<trans-unit id="PortServer" resname="PortServer">
+				<source>Port listened by 4D server:</source>
+				<target>Port listened by 4D server:</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

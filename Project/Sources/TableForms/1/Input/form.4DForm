@@ -47,15 +47,16 @@
 					"width": 380,
 					"height": 17,
 					"sizingX": "grow",
-					"stroke": "#000000",
-					"text": "INFO"
+					"stroke": "automatic",
+					"text": ":xliff:INFO_Input_Title"
 				},
 				"Line6": {
 					"type": "line",
 					"top": 77,
 					"left": 19,
 					"width": 509,
-					"sizingX": "grow"
+					"sizingX": "grow",
+					"stroke": "automatic"
 				},
 				"bFirst": {
 					"type": "pictureButton",
@@ -197,7 +198,8 @@
 					"width": 85,
 					"height": 17,
 					"textAlign": "right",
-					"text": "ID : "
+					"text": ":xliff:INFO_Input_LabelID",
+					"stroke": "automatic"
 				},
 				"ID": {
 					"type": "input",
@@ -225,7 +227,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Description": {
 					"type": "input",
@@ -237,7 +240,7 @@
 					"sizingY": "grow",
 					"dataSource": "[INFO:1]Description:2",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"styledText": true,
 					"scrollbarVertical": "visible",
@@ -253,7 +256,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Field": {
 					"type": "input",
@@ -267,7 +271,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Field1": {
 					"type": "input",
@@ -283,7 +288,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				}
 			}
 		}

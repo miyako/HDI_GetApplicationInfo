@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-C_LONGINT:C283($n; $i)
+var $n; $i : Integer
 
 Case of 
 		

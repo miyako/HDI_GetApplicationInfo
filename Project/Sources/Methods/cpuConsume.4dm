@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-C_LONGINT:C283($i; $j)
+var $i; $j : Integer
 
 For ($i; 1; 1000)
 	For ($j; 1; 10000)

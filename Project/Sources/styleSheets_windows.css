@@ -19,3 +19,22 @@
 	font-weight: bold;
 }
 
+@media (form-theme: fluent-ui) {
+	.default {
+		height: 24px;
+	}
+
+	button.default {
+		height: 24px;
+	}
+}
+
+@media (form-theme: win-classic) {
+	.default {
+		height: 21px;
+	}
+
+	button.default {
+		height: 21px;
+	}
+}

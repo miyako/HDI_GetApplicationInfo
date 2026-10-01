@@ -1,7 +1,6 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($portTitle; $ip)
-C_LONGINT:C283($i)
-C_OBJECT:C1216($obj)
+var $portTitle; $ip : Text
+var $i : Integer
 
 Form:C1466.applicationInfo:=Application info:C1599
 
@@ -9,51 +8,51 @@ Form:C1466.executionMode:=Form:C1466.applicationTypes.query("value=:1"; Applicat
 
 Case of 
 	: (Form:C1466.applicationInfo.volumeShadowCopyStatus=vss not available:K5:48)
-		Form:C1466.applicationInfo.volumeShadowCopyStatusText:="Not available"
+		Form:C1466.applicationInfo.volumeShadowCopyStatusText:=Localized string("VSSNotAvailable")
 		
 	: (Form:C1466.applicationInfo.volumeShadowCopyStatus=vss error:K5:49)
-		Form:C1466.applicationInfo.volumeShadowCopyStatusText:="Not running (a problem occured)"
+		Form:C1466.applicationInfo.volumeShadowCopyStatusText:=Localized string("VSSError")
 		
 	: (Form:C1466.applicationInfo.volumeShadowCopyStatus=vss update required:K5:50)
-		Form:C1466.applicationInfo.volumeShadowCopyStatusText:="Not running (VSS service is not up to date)"
+		Form:C1466.applicationInfo.volumeShadowCopyStatusText:=Localized string("VSSUpdateRequired")
 		
 	: (Form:C1466.applicationInfo.volumeShadowCopyStatus=vss available:K5:51)
-		Form:C1466.applicationInfo.volumeShadowCopyStatusText:="Up and running"
+		Form:C1466.applicationInfo.volumeShadowCopyStatusText:=Localized string("VSSRunning")
 End case 
 
 If (Form:C1466.applicationInfo.TLSEnabled=Null:C1517)
-	Form:C1466.applicationInfo.TLSEnabled:="Not returned with 4D mono"
+	Form:C1466.applicationInfo.TLSEnabled:=Localized string("NotReturnedMono")
 End if 
 
 If (Form:C1466.applicationInfo.useLegacyNetworkLayer=Null:C1517)
-	Form:C1466.applicationInfo.useLegacyNetworkLayer:="Not returned with 4D mono"
+	Form:C1466.applicationInfo.useLegacyNetworkLayer:=Localized string("NotReturnedMono")
 End if 
 
 If (Form:C1466.applicationInfo.portID=Null:C1517)
-	Form:C1466.applicationInfo.portID:="Not returned with 4D mono"
-	$portTitle:="Port:"
+	Form:C1466.applicationInfo.portID:=Localized string("NotReturnedMono")
+	$portTitle:=Localized string("PortDefault")
 Else 
 	Case of 
 		: (Application type:C494=4D Remote mode:K5:5)
-			$portTitle:="Port used to connect on server:"
+			$portTitle:=Localized string("PortRemote")
 		: (Application type:C494=4D Server:K5:6)
-			$portTitle:="Port listened by 4D server:"
+			$portTitle:=Localized string("PortServer")
 	End case 
 End if 
 
 OBJECT SET TITLE:C194(*; "usedPort"; $portTitle)
 
 If (Form:C1466.applicationInfo.newConnectionsAllowed=Null:C1517)
-	Form:C1466.applicationInfo.newConnectionsAllowed:="Not returned with 4D mono / 4D remote"
+	Form:C1466.applicationInfo.newConnectionsAllowed:=Localized string("NotReturnedMonoRemote")
 End if 
 
 If (Form:C1466.applicationInfo.IPAddressesAllowDeny=Null:C1517)
 	Form:C1466.applicationInfo.IPAddressesAllowDeny:=New collection:C1472()
-	Form:C1466.applicationInfo.IPAddressesAllowDeny.push(New object:C1471("mode"; "Not returned with 4D mono / 4D remote"; "ip"; ""))
+	Form:C1466.applicationInfo.IPAddressesAllowDeny.push(New object:C1471("mode"; Localized string("NotReturnedMonoRemote"); "ip"; ""))
 End if 
 
 If (Form:C1466.applicationInfo.IPAddressesToListen=Null:C1517)
-	Form:C1466.IPAddressesToListenAsString:="Not returned with 4D mono / 4D remote"
+	Form:C1466.IPAddressesToListenAsString:=Localized string("NotReturnedMonoRemote")
 Else 
 	$i:=0
 	Form:C1466.IPAddressesToListenAsString:=""

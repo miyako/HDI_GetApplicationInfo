@@ -54,7 +54,8 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "In this part you will learn how to query the DataStore"
+					"text": ":xliff:HDI2_QueryDataStoreHint",
+					"stroke": "automatic"
 				},
 				"information4": {
 					"type": "input",
@@ -73,7 +74,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -92,7 +94,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"VSCStatus": {
 					"type": "text",
@@ -102,7 +105,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "VSS status:"
+					"text": ":xliff:HDI2_LabelVSSStatus",
+					"stroke": "automatic"
 				},
 				"Text2": {
 					"type": "text",
@@ -112,7 +116,8 @@
 					"height": 20,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "The Get application Info command is now executed on:"
+					"text": ":xliff:HDI2_LabelExecutedOn",
+					"stroke": "automatic"
 				},
 				"Variable5": {
 					"type": "input",
@@ -121,7 +126,6 @@
 					"width": 150,
 					"height": 20,
 					"dataSource": "Form:C1466.executionMode",
-					"stroke": "#DC143C",
 					"textAlign": "left",
 					"fontWeight": "bold",
 					"focusable": false,
@@ -129,7 +133,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "custom"
+					"dropping": "custom",
+					"class": "accent"
 				},
 				"Variable12": {
 					"type": "input",
@@ -144,7 +149,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Text13": {
 					"type": "text",
@@ -154,7 +160,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Database launched as service:"
+					"text": ":xliff:HDI2_LabelLaunchedAsService",
+					"stroke": "automatic"
 				},
 				"Variable1": {
 					"type": "input",
@@ -169,7 +176,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"usedPort": {
 					"type": "text",
@@ -179,7 +187,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "title to be updated"
+					"text": ":xliff:HDI2_LabelPortPlaceholder",
+					"stroke": "automatic"
 				},
 				"Variable11": {
 					"type": "input",
@@ -194,7 +203,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Text11": {
 					"type": "text",
@@ -204,7 +214,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "TLS enabled:"
+					"text": ":xliff:HDI2_LabelTLSEnabled",
+					"stroke": "automatic"
 				},
 				"ServerInfo_4": {
 					"type": "input",
@@ -219,7 +230,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"ServerInfo_3": {
 					"type": "text",
@@ -229,7 +241,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "New connections allowed:"
+					"text": ":xliff:HDI2_LabelNewConnections",
+					"stroke": "automatic"
 				},
 				"Variable10": {
 					"type": "input",
@@ -244,7 +257,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Text10": {
 					"type": "text",
@@ -254,7 +268,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "% processor used:"
+					"text": ":xliff:HDI2_LabelCPUPercent",
+					"stroke": "automatic"
 				},
 				"Variable4": {
 					"type": "input",
@@ -269,7 +284,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Text4": {
 					"type": "text",
@@ -279,7 +295,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Up time (seconds):"
+					"text": ":xliff:HDI2_LabelUptime",
+					"stroke": "automatic"
 				},
 				"Variable6": {
 					"type": "input",
@@ -299,7 +316,8 @@
 						"$ref": "/SOURCES/filters.json#/NetworkThroughput"
 					},
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Variable7": {
 					"type": "input",
@@ -319,7 +337,8 @@
 						"$ref": "/SOURCES/filters.json#/NetworkThroughput"
 					},
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Text12": {
 					"type": "text",
@@ -329,7 +348,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Network output throughput (KB/s):"
+					"text": ":xliff:HDI2_LabelNetOutput",
+					"stroke": "automatic"
 				},
 				"Variable3": {
 					"type": "input",
@@ -344,7 +364,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Text3": {
 					"type": "text",
@@ -354,7 +375,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Use legacy network layer:"
+					"text": ":xliff:HDI2_LabelLegacyNetwork",
+					"stroke": "automatic"
 				},
 				"Text6": {
 					"type": "text",
@@ -364,7 +386,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Network input throughput (KB/s):"
+					"text": ":xliff:HDI2_LabelNetInput",
+					"stroke": "automatic"
 				},
 				"ServerInfo_IPsListened": {
 					"type": "listbox",
@@ -386,9 +409,6 @@
 							"width": 230,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -397,7 +417,7 @@
 							],
 							"header": {
 								"name": "Header1",
-								"text": "Allow / deny",
+								"text": ":xliff:HDI2_HeaderAllowDeny",
 								"stroke": "automatic",
 								"textAlign": "center",
 								"verticalAlign": "automatic"
@@ -408,7 +428,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column2",
@@ -416,9 +437,6 @@
 							"width": 230,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -427,7 +445,7 @@
 							],
 							"header": {
 								"name": "Header2",
-								"text": "IP",
+								"text": ":xliff:HDI2_HeaderIP",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -438,15 +456,20 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Line": {
 					"type": "line",
 					"top": 200,
 					"left": 60,
-					"width": 800
+					"width": 800,
+					"stroke": "automatic"
 				},
 				"Text1": {
 					"type": "text",
@@ -454,16 +477,17 @@
 					"left": 60,
 					"width": 250,
 					"height": 20,
-					"stroke": "#800080",
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "General information"
+					"text": ":xliff:HDI2_SectionGeneral",
+					"class": "section"
 				},
 				"Line1": {
 					"type": "line",
 					"top": 350,
 					"left": 60,
-					"width": 800
+					"width": 800,
+					"stroke": "automatic"
 				},
 				"Text5": {
 					"type": "text",
@@ -471,16 +495,17 @@
 					"left": 60,
 					"width": 250,
 					"height": 20,
-					"stroke": "#800080",
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "Network information"
+					"text": ":xliff:HDI2_SectionNetwork",
+					"class": "section"
 				},
 				"ServerInfo_2": {
 					"type": "line",
 					"top": 500,
 					"left": 60,
-					"width": 800
+					"width": 800,
+					"stroke": "automatic"
 				},
 				"ServerInfo_1": {
 					"type": "text",
@@ -488,10 +513,10 @@
 					"left": 60,
 					"width": 250,
 					"height": 20,
-					"stroke": "#800080",
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "Server information"
+					"text": ":xliff:HDI2_SectionServer",
+					"class": "section"
 				},
 				"information1": {
 					"type": "input",
@@ -510,7 +535,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"ServerInfo_5": {
 					"type": "input",
@@ -529,7 +555,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"ServerInfo_7": {
 					"type": "text",
@@ -539,7 +566,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "IPs listened by 4D Server:"
+					"text": ":xliff:HDI2_LabelIPsListened",
+					"stroke": "automatic"
 				},
 				"Variable": {
 					"type": "input",
@@ -554,20 +582,21 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Button": {
 					"type": "button",
 					"top": 290,
 					"left": 750,
 					"width": 120,
-					"height": 20,
-					"text": "Consume CPU",
+					"text": ":xliff:HDI2_BtnConsumeCPU",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"ServerInfo_6": {
 					"type": "text",
@@ -577,7 +606,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Client IPs allowed / denied on Server:"
+					"text": ":xliff:HDI2_LabelClientIPs",
+					"stroke": "automatic"
 				}
 			}
 		}
