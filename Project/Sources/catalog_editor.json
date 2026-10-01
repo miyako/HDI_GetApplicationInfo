@@ -1,0 +1,40 @@
+{
+	"tables": {
+		"INFO": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "16.5234375",
+				"top": "93.484375",
+				"width": "148.13671875",
+				"height": "236.4296875"
+			},
+			"displayable_fields_count": 9,
+			"fields_ordering": 2,
+			"fields": {
+				"PageNumber": {
+					"position": 2
+				},
+				"TabTitle": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					},
+					"position": 3
+				},
+				"Description": {
+					"position": 4
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		}
+	}
+}

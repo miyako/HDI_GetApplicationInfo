@@ -1,0 +1,585 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 720,
+	"windowMaxHeight": 32000,
+	"width": 920,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 16,
+					"left": 20,
+					"width": 880,
+					"height": 680,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 859,
+					"left": 30,
+					"width": 920,
+					"height": 40,
+					"sizingX": "grow",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "In this part you will learn how to query the DataStore"
+				},
+				"information4": {
+					"type": "input",
+					"top": 100,
+					"left": 50,
+					"width": 800,
+					"height": 320,
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable2": {
+					"type": "input",
+					"top": 210,
+					"left": 290,
+					"width": 350,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.volumeShadowCopyStatusText",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"VSCStatus": {
+					"type": "text",
+					"top": 210,
+					"left": 30,
+					"width": 250,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "VSS status:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 140,
+					"left": 60,
+					"width": 380,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "The Get application Info command is now executed on:"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 140,
+					"left": 430,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.executionMode",
+					"stroke": "#DC143C",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 250,
+					"left": 290,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.launchedAsService",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 250,
+					"left": 30,
+					"width": 250,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Database launched as service:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 400,
+					"left": 290,
+					"width": 200,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.portID",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"usedPort": {
+					"type": "text",
+					"top": 400,
+					"left": 30,
+					"width": 250,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "title to be updated"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 360,
+					"left": 290,
+					"width": 200,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.TLSEnabled",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 360,
+					"left": 30,
+					"width": 250,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "TLS enabled:"
+				},
+				"ServerInfo_4": {
+					"type": "input",
+					"top": 510,
+					"left": 290,
+					"width": 300,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.newConnectionsAllowed",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ServerInfo_3": {
+					"type": "text",
+					"top": 510,
+					"left": 35,
+					"width": 245,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "New connections allowed:"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 290,
+					"left": 680,
+					"width": 100,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.cpuUsage",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 290,
+					"left": 430,
+					"width": 240,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "% processor used:"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 290,
+					"left": 290,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.uptime",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 290,
+					"left": 35,
+					"width": 250,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Up time (seconds):"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 440,
+					"left": 290,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.networkInputThroughput/1024",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/NetworkThroughput"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 440,
+					"left": 690,
+					"width": 160,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.networkOutputThroughput/1024",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/NetworkThroughput"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 440,
+					"left": 440,
+					"width": 240,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Network output throughput (KB/s):"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 360,
+					"left": 690,
+					"width": 200,
+					"height": 20,
+					"dataSource": "Form:C1466.applicationInfo.useLegacyNetworkLayer",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 360,
+					"left": 440,
+					"width": 240,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Use legacy network layer:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 440,
+					"left": 30,
+					"width": 250,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Network input throughput (KB/s):"
+				},
+				"ServerInfo_IPsListened": {
+					"type": "listbox",
+					"top": 580,
+					"left": 290,
+					"width": 475,
+					"height": 77,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"dataSource": "Form:C1466.applicationInfo.IPAddressesAllowDeny",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.mode",
+							"width": 230,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Allow / deny",
+								"stroke": "automatic",
+								"textAlign": "center",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.ip",
+							"width": 230,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "IP",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 200,
+					"left": 60,
+					"width": 800
+				},
+				"Text1": {
+					"type": "text",
+					"top": 180,
+					"left": 60,
+					"width": 250,
+					"height": 20,
+					"stroke": "#800080",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "General information"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 350,
+					"left": 60,
+					"width": 800
+				},
+				"Text5": {
+					"type": "text",
+					"top": 330,
+					"left": 60,
+					"width": 250,
+					"height": 20,
+					"stroke": "#800080",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "Network information"
+				},
+				"ServerInfo_2": {
+					"type": "line",
+					"top": 500,
+					"left": 60,
+					"width": 800
+				},
+				"ServerInfo_1": {
+					"type": "text",
+					"top": 480,
+					"left": 60,
+					"width": 250,
+					"height": 20,
+					"stroke": "#800080",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "Server information"
+				},
+				"information1": {
+					"type": "input",
+					"top": 70,
+					"left": 50,
+					"width": 800,
+					"height": 70,
+					"dataSource": "_Descriptions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ServerInfo_5": {
+					"type": "input",
+					"top": 616,
+					"left": 40,
+					"width": 240,
+					"height": 49,
+					"dataSource": "_Directions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ServerInfo_7": {
+					"type": "text",
+					"top": 550,
+					"left": 35,
+					"width": 245,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "IPs listened by 4D Server:"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 550,
+					"left": 290,
+					"width": 300,
+					"height": 20,
+					"dataSource": "Form:C1466.IPAddressesToListenAsString",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button": {
+					"type": "button",
+					"top": 290,
+					"left": 750,
+					"width": 120,
+					"height": 20,
+					"text": "Consume CPU",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ServerInfo_6": {
+					"type": "text",
+					"top": 590,
+					"left": 35,
+					"width": 245,
+					"height": 20,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Client IPs allowed / denied on Server:"
+				}
+			}
+		}
+	]
+}
